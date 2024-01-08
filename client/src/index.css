@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    --space: 45px;
+  }
+
+  body {
+    @apply bg-background text-foreground m-0 font-jost box-border;
+  }
+}

@@ -1,0 +1,1 @@
+export const centerPageClasses = "flex-grow flex items-center justify-center";
