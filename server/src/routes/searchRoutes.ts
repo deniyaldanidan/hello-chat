@@ -15,7 +15,10 @@ const searchRoutes: RoutesObj = [
                     OR: [
                         { username: { contains: searchKey } },
                         { name: { contains: searchKey } }
-                    ]
+                    ],
+                    NOT: {
+                        username: res.locals?.username ?? ""
+                    }
                 },
                 select: {
                     username: true,
